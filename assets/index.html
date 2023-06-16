@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>ISURIZ</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/img/logo.png" sizes="180x180">
+    <link rel="icon" href="/img/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/logo.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="/img/logo.png" color="#7952b3">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<!-- Style starts here -->
+<style>
+    * {
+        font-family: 'Roboto', 'Open Sans', sans-serif;
+    }
+
+    .logo{
+      max-height: 45px;
+    }
+
+
+    .main-header{
+      /* margin-top: 53px; */
+      background: linear-gradient(to top, rgba(24, 26, 29, 0), rgba(24, 26, 29, 0.3));
+    }
+
+    .main-header i.fas{
+      color: rgb(168, 172, 177);
+    }
+
+    .main-header a{
+      letter-spacing: 1.1px;
+    }
+
+    .main-header a:hover{
+      color: rgb(168, 172, 177) !important;
+    }
+
+    .shadow{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .control{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+    }
+
+    .dropdown-toggle::after{
+      display: none;
+    }
+
+
+    .dropdown-menu.show{
+      padding: 0;
+      transition: all 200ms ease-in 0s;
+      box-shadow: rgb(0 0 0 / 37%) 0px 30px 80px 0px;
+      background-color: rgb(255, 255, 255);
+      min-height: 29rem;
+      min-width: 50rem;
+      animation: 600ms ease 0s 1 normal none running hUniol;
+      display: flex;
+    }
+
+    .dropdown-toggle > i.fa-caret-up{
+      color: white;
+      display: none;
+    }
+
+    .dropdown-toggle.show > i.fa-caret-up{
+      display: block;
+      position: absolute;
+      bottom: -9px;
+      transform: translate(4em, 0px);
+    }
+
+    .bg-offwhite{
+      background-color: rgb(245, 247, 249);
+    }
+
+    h6{
+      font-weight: 700;
+      font-family: brandon-grotesque, sans-serif;
+      letter-spacing: 0.1em;
+      line-height: 1.375em;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: all 200ms ease-in 0s;
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .small-text{
+      font-weight: 300;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.025em;
+      line-height: 1.5em;
+      font-size: 13px;
+      color: rgb(101, 102, 106);
+      margin-bottom: 1rem;
+      max-width: 12.5rem;
+    }
+
+    .sub-menu-container{
+      width: 100%;
+    }
+
+    .sub-menu-container .left-side{
+      padding: 3.5rem 4.5rem 4rem 4rem;
+    }
+
+    .sub-menu-container .right-side{
+      background-color: rgb(245, 247, 249);
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 3rem;
+    }
+
+    .sub-menu-container .right-side .list-group-item{
+      border: 0px transparent;
+      background-color: transparent;
+    }
+
+    .sub-menu-container .right-side .list-group-item a{
+      text-decoration: none;
+      border-bottom: 0px;
+    }
+
+    .sub-menu-container a{
+      letter-spacing: 0.025em;
+      line-height: 1.5em;
+      font-size: 12px;
+      font-weight: 400;
+      border-bottom: 1px solid #000000;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .dropdown-toggle .fa-angle-up{
+      display: none;
+    }
+
+    .dropdown-toggle.show .fa-angle-up{
+      display: inline-block;
+    }
+
+    .dropdown-toggle .fa-angle-down{
+      display: inline-block;
+    }
+
+    .dropdown-toggle.show .fa-angle-down{
+      display: none;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .xs-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .logo{
+        max-height: 40px;
+      }
+    }
+</style>
+<!-- Style ends here -->
+
+    
+
+  </head>
+<body>
+
+
+<header class="main-header navbar navbar-dark justify-content-center fixed-top text-uppercase">
+  <div class="container-fluid justify-content-md-between d-flex flex-wrap align-items-center px-4">
+
+      <a href="/" class="d-flex align-items-center col-md-2 mb-md-0 text-dark text-decoration-none">
+          <img src="/img/logo.png" alt="ISURIZ" class="logo">
+      </a>
+      
+
+      <div class="col-md-10 d-flex align-items-center d-none d-sm-block">
+        <div class="d-flex collapse navbar-collapse show" id="main-nav">
+
+        <ul class="nav col-12 col-md-9 mb-2 justify-content-center mb-md-0">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Micro-Internships
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+                <i class="fas fa-caret-up"></i>
+              </a>
+              <section class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-auto-close="outside">
+                <div class="sub-menu-container d-flex">
+                  <div class="col-sm-8 left-side">
+
+                    <div class="row mb-5">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="#">Link-1</a>
+                          <a href="#">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="#">Link-1</a>
+                          <a href="#">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4 bg-offwhite right-side">
+                      <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                College List Builder
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+                <i class="fas fa-caret-up"></i>
+              </a>
+              <section class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-auto-close="outside">
+                
+                <div class="sub-menu-container d-flex">
+                  <div class="col-sm-8 left-side">
+
+                    <div class="row mb-5">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="http://isuriz.com/">Link-1</a>
+                          <a href="http://isuriz.com/">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="http://isuriz.com/">Link-1</a>
+                          <a href="http://isuriz.com/">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4 bg-offwhite right-side">
+                      <ul class="list-group">
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="http://isuriz.com/">Sample link 1</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                College Counselor Hub
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+                <i class="fas fa-caret-up"></i>
+              </a>
+              <section class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-auto-close="outside">
+                
+                <div class="sub-menu-container d-flex">
+                  <div class="col-sm-8 left-side">
+
+                    <div class="row mb-5">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="#">Link-1</a>
+                          <a href="#">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <img class="my-2" src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" alt="" width="128">
+                      </div>
+                      <div class="col-sm-6">
+                        <h6 class="fw-bold">SAMPLE-HEADLINE</h6>
+                        <p class="fw-thin small-text">
+                          Sample text goes here. Sample text goes here. 
+                        </p>
+                        <p>
+                          <a href="#">Link-1</a>
+                          <a href="#">Link-2</a>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4 bg-offwhite right-side">
+                      <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                        <li class="list-group-item"><a href="#">Sample link 1</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </section>
+            </li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <a href="#" class="btn">
+            <svg role="presentation" width="32" height="32" viewBox="0 0 32 32" title="Account-i10n"><title>Account-i10n</title><g fill="none" fill-rule="evenodd"><path d="M0 0h32v32H0z"></path><path d="M16 6a6 6 0 100 12 6 6 0 000-12zm0 2a4 4 0 110 8 4 4 0 010-8z" fill="#FFF" fill-rule="nonzero"></path><path d="M27 27c0-4.97-4.925-9-11-9S5 22.03 5 27" stroke="#FFF" stroke-width="2" stroke-linecap="round"></path></g></svg>
+          </a>
+          <a href="#" class="btn">
+            <svg role="presentation" width="32" height="32" viewBox="0 0 32 32" aria-label="open cart" title="Cart-i10n"><title>Cart-i10n</title><g fill="none"><g><path d="M0 0H32V32H0z" transform="translate(-269 -537) translate(269 537)"></path><g transform="translate(-269 -537) translate(269 537) translate(4 6)"><g><path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M7.736 2.047h15.675c.165 0 .3.135.3.3 0 .024-.003.048-.009.071l-2.676 10.99c-.032.135-.153.23-.291.23H6.975c-.131 0-.247-.085-.286-.21L2.519.21C2.48.085 2.364 0 2.233 0H0h0"></path><circle cx="18.75" cy="19.043" r="1.75" fill="#FFF"></circle></g><circle cx="8.75" cy="19.043" r="1.75" fill="#FFF"></circle></g></g></g></svg>
+          </a>
+          
+        </div>
+      </div>
+      </div>
+
+      <a href="#" class="btn d-block d-sm-none">
+        <svg role="presentation" width="32" height="32" viewBox="0 0 32 32" title="Account-i10n"><title>Account-i10n</title><g fill="none" fill-rule="evenodd"><path d="M0 0h32v32H0z"></path><path d="M16 6a6 6 0 100 12 6 6 0 000-12zm0 2a4 4 0 110 8 4 4 0 010-8z" fill="#FFF" fill-rule="nonzero"></path><path d="M27 27c0-4.97-4.925-9-11-9S5 22.03 5 27" stroke="#FFF" stroke-width="2" stroke-linecap="round"></path></g></svg>
+      </a>
+      <a href="#" class="btn d-block d-sm-none">
+        <svg role="presentation" width="32" height="32" viewBox="0 0 32 32" aria-label="open cart" title="Cart-i10n"><title>Cart-i10n</title><g fill="none"><g><path d="M0 0H32V32H0z" transform="translate(-269 -537) translate(269 537)"></path><g transform="translate(-269 -537) translate(269 537) translate(4 6)"><g><path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M7.736 2.047h15.675c.165 0 .3.135.3.3 0 .024-.003.048-.009.071l-2.676 10.99c-.032.135-.153.23-.291.23H6.975c-.131 0-.247-.085-.286-.21L2.519.21C2.48.085 2.364 0 2.233 0H0h0"></path><circle cx="18.75" cy="19.043" r="1.75" fill="#FFF"></circle></g><circle cx="8.75" cy="19.043" r="1.75" fill="#FFF"></circle></g></g></g></svg>
+      </a>
+
+      <button class="navbar-toggler d-block d-sm-none border-light" type="button" data-bs-toggle="collapse" data-bs-target="#xs-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-light"></i>
+      </button>
+
+      <div class="collapse text-light bg-dark xs-nav" id="xs-nav">
+        <div class="col-xs-12 d-flex justify-content-end">
+          
+            <button class="navbar-toggler d-block d-sm-none m-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#xs-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-times fa-2x text-light"></i>
+            </button>
+          
+        </div>
+
+        <div class="col-xs-12">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark my-3">
+              <!-- <a href="#" class="text-light text-decoration-none fs-5">Micro-Internships <i class="fas fa-angle-right"></i> </a> -->
+              <a href="#" class="text-light text-decoration-none fs-5"  type="button" data-bs-toggle="collapse" data-bs-target="#xs-sub-nav-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Micro-Internships <i class="fas fa-angle-right"></i> </a>
+            </li>
+            <li class="list-group-item bg-dark my-3">
+              <a href="#" class="text-light text-decoration-none fs-5">College List Builder <i class="fas fa-angle-right"></i> </a>
+            </li>
+            <li class="list-group-item bg-dark my-3">
+              <a href="#" class="text-light text-decoration-none fs-5">College Counselor Hub <i class="fas fa-angle-right"></i> </a>
+            </li>
+          </ul>
+        </div>
+
+        
+      </div>
+      
+      <div class="collapse text-light bg-dark xs-nav" id="xs-sub-nav-1">
+        <div class="d-flex">
+          <div class="col-6 d-flex justify-content-start">
+            
+              <button class="navbar-toggler d-block d-sm-none m-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#xs-sub-nav-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-angle-left fa-2x text-light"></i>
+              </button>
+            
+          </div>
+      </div>
+
+        <div class="col-xs-12">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark my-3">
+              <a href="#" class="text-light text-decoration-none fs-5">Sample Text 1 <i class="fas fa-angle-right"></i> </a>
+            </li>
+            <li class="list-group-item bg-dark my-3">
+              <a href="#" class="text-light text-decoration-none fs-5">Sample Text 2 <i class="fas fa-angle-right"></i> </a>
+            </li>
+            <li class="list-group-item bg-dark my-3">
+              <a href="#" class="text-light text-decoration-none fs-5">Sample Text 3 <i class="fas fa-angle-right"></i> </a>
+            </li>
+          </ul>
+        </div>
+
+        
+      </div>
+
+    </div>
+</header>
+
+
+<main>
+
+  <div id="myCarousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active d-flex justify-content-center">
+        
+          <video src="/video/isuriz.mp4" autoplay="true" loop muted ></video>
+
+          <span class="shadow"></span>
+
+          <div class="control">
+            <button class="btn text-light play"><i class="far fa-play-circle"></i></button>
+            <button class="btn text-light pause"><i class="far fa-pause-circle"></i></button>
+            <button class="btn text-light mute"><i class="fas fa-volume-mute"></i></button>
+            <button class="btn text-light volume"><i class="fas fa-volume-up"></i></button>
+          </div>
+          
+      </div>
+      
+      <!-- <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div>
+
+  
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+<script>
+
+/**
+ * Sticky Header start
+ * */ 
+$(document).scroll(function(e){
+    let distance = $(this).scrollTop(),
+        gradient_1 = 0 + distance /2 / 100,
+        gradient_2 = 0.3 + distance /2 / 100;
+
+    if( gradient_1 > 1 ){
+      gradient_1 = 1;
+      gradient_2 = 1;
+    } 
+    
+    $('.main-header').css({
+      // 'margin-top': marginTop,
+      'background': `linear-gradient(to top, rgba(24, 26, 29, ${gradient_1}), rgba(24, 26, 29, ${gradient_2}))`
+    });
+})
+/**
+ * End: Sticky Header
+ * */
+
+
+/**
+ * Video autoplay starts
+ * */ 
+var video = document.querySelector('video');
+var promise = video.play();
+
+if (promise !== undefined) {
+  promise.then(_ => {
+    // Autoplay started!
+    $('.pause, .sound').show();
+    $('.play, .mute').hide();
+  }).catch(error => {
+    // Autoplay was prevented.
+    // Show a "Play" button so that user can start playback.
+    $('.pause, .sound').hide();
+    $('.play, .mute').show();
+  });
+}
+
+$('.play').click(function(e){
+  e.preventDefault();
+  promise = video.play();
+
+  $('.pause').show();
+  $('.play').hide();
+})
+
+$('.pause').click(function(e){
+  e.preventDefault();
+
+  video.pause();
+
+  $('.pause').hide();
+  $('.play').show();
+
+})
+
+$('.volume').click(function(e){
+  e.preventDefault();
+  video.muted = false;
+  $('.volume').hide()
+  $('.mute').show();
+})
+
+$('.mute').click(function(e){
+  e.preventDefault();
+  video.muted = true;
+  $('.volume').show()
+  $('.mute').hide();
+})
+
+
+/**
+ * End: Video autoplay
+*/
+</script>
+      
+  </body>
+</html>

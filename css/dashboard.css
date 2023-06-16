@@ -1,0 +1,299 @@
+/*
+ *
+ * Dashboard CSS
+ * Version: 1.0.1
+ * Modified on 10-10-2020 ArulPrasadJ
+ *
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ .logout{
+ 	background: #019ff0;
+ 	color: #fff !important;
+ 	padding: 8px 2px !important;
+    border-radius: 28px;
+ 	box-shadow: 8px 10px 28px #9fdbf9;
+ 	text-decoration: none;
+      width: 129px;
+          text-align: center;
+          font-size: 17px!important;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+ .wrapper .aside-container .aside-inner {
+    padding-top: 65px;
+  }
+  .topnavbar {
+    min-height: 78px;
+  }
+ .section-two-img {
+ 	margin-right: 35px;
+ }
+ .logout-li {
+ 	margin-right: 15px;
+ }
+ .topnavbar .navbar-nav>.nav-item.show>.nav-link:focus, .topnavbar .navbar-nav>.nav-item.show>.nav-link:hover, .topnavbar .navbar-nav>.nav-item>.nav-link:focus, .topnavbar .navbar-nav>.nav-item>.nav-link:hover {
+ 	color: #717171;
+ }
+ .footer-container {
+ 	text-align: center;
+ 	float: right;
+ }
+ .sidebar:after {
+ 	background: rgb(1 159 240);
+ }
+ .blueBtnBig {
+ 	background: #019ff0;
+ 	color: #fff !important;
+ 	padding: 16px 60px !important;
+ 	border-radius: 50px;
+ 	box-shadow: 8px 10px 28px #9fdbf9;
+ 	text-decoration: none;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+ .trending-collages-btn:hover{
+    text-decoration: none;
+}
+.blue-bg{
+	background: #019ff0;
+}
+.search-btnn{
+	    color: #fff;
+    background-color: #019ff0;
+    border-color: #019ff0;
+}
+.font-600{
+      font-weight: 600;
+}
+ .mt-20{
+ 	margin-top: 20px;
+ }
+ .mt-30{
+ 	margin-top: 30px
+ }
+ .mb-20 {
+ 	margin-bottom: 20px;
+ }
+ .mb-30 {
+ 	margin-bottom: 30px;
+ }
+ .l-3{
+ 	line-height: 3;
+ }
+ .section-two h2 {
+ 	color: #3a3a3a;
+ 	margin-bottom: 14px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-weight: 700;
+ }
+ .mycollegelist{
+  border-radius: 0px;
+}
+.mycollegelist .list-group-item{
+  border-width: 0px;
+}
+.mycollegelist .list-group-item.cat-header{
+  background-color:#019ff0 !important;
+      font-size: 14px;
+  font-weight: 600;
+    color: #fff;
+  padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.mycollegelist .list-group-item{
+  color: #373A3C;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.mycollegelist .list-group-item:nth-child(odd){
+background-color:#f2f2f2;
+}
+.blue-outline {
+    background: #fff !important;
+    color: #019ff0 !important;
+    border: 2px solid #019ff0 !important;
+    padding: 14px 60px !important;
+    border-radius: 50px;
+    box-shadow: 8px 10px 28px #9fdbf9;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.ml-14{
+      margin-left: 14px;
+}
+ /***footer**/
+ footer {
+ 	width: 100%;
+ 	float: left;
+ 	background:url(../images/footer-cover.jpg) no-repeat;
+ 	background-size: cover;
+ 	padding: 80px 0;
+ 	color: #fff;
+ 	font-size: 12px;
+ 	text-align: center;
+ }
+ footer a {
+ 	color: #019ff0;
+ 	margin: 0 5px;
+ }
+ footer ul {
+ 	margin: 45px 0;
+ 	list-style-type: none;
+ 	display: inline-block;
+ }
+ footer ul li {
+ 	float: left;
+ 	margin: 0;
+ }
+ footer ul li a {
+ 	float: left;
+ 	padding: 0 10px;
+ 	font-size: 16px;
+ 	color: #a5acb2 !important;
+ 	font-weight: 500;
+ }
+ .socaldiv em {
+ 	font-size: 26px;
+ 	color: #a5acb2;
+ }
+ .socaldiv a {
+ 	margin:0 10px;
+ }
+ footer ul li:first-child a {
+ 	padding-left: 0;
+ 	border-left: none;
+ }
+ .social {
+ 	width: 100%;
+ 	float: left;
+ 	text-align: right;
+ }
+ .fotdiv p {
+ 	font-size:16px;
+ 	color: #a5acb2 !important;
+ 	font-weight: 500;
+ }
+ .clock .text-sm {
+ 	color: #fff  !important;
+ }
+ .home-search-bar{
+    height: 62px;
+  }
+  .topnavbar .navbar-nav>.nav-item>.nav-link {
+    font-size: 1.5rem;
+}
+.blue-border{
+      border: #019ff0;
+}
+.dashboard-contactus input,.dashboard-contactus textarea,#idForm input{
+      border: none;
+    border-bottom: 1px solid #dcdfe0 !important;
+    box-shadow: none;
+    padding-left: 4px;
+}
+
+@media (max-width: 992px) {
+.topnavbar .navbar-header .brand-logo {
+    margin-top: -8px;
+}
+}
+@media (min-width: 768px){
+#welcometext-div {
+    margin: -20px -20px 10px;
+    padding: 8px 20px;
+}
+#welcometext-mb{
+  margin-bottom: 4px;
+}
+}
+  @media (max-width: 767.98px){
+    .brand-logo img{
+          height: 51px;
+    }
+.sidebar-toggle {
+    left: unset;
+    right: 0;
+    top: -2px;
+}
+
+.topnavbar .navbar-nav>.nav-item>.nav-link {
+    padding: 1.1rem 1.5rem;
+    }
+.topnavbar .navbar-header {
+    padding-left: 0rem;
+}
+}
+ @media (max-width: 767px){
+  .home-search-bar{
+    padding-bottom: 14px;
+  }
+ 	footer {
+ 		padding: 50px 0;
+ 		margin-left: 0px;
+ 	}
+ 	.fotdiv ul {
+ 		padding: 0;
+ 		margin: 24px 0;
+ 	}
+ 	.fotdiv ul li {
+ 		float: none;
+ 		text-align: center;
+ 		width: 100%;
+ 		margin: 8px 0;
+ 	}
+ 	.fotdiv ul li a {
+ 		float: none;
+ 		padding: 0;
+ 		font-size: 16px;
+ 	}
+ }
+ /**end footer**/
+ @media (max-width:767px){
+.logout-li {
+    display: none;
+  }
+ }
+ @media (max-width:792px){
+
+ 	.logout {
+ 		padding: 12px 32px !important;
+ 	}
+ 	.section-two-img {
+ 		margin-right: 0px;
+ 		margin-bottom: 35px;
+ 	}
+ 	.blueBtnBigdiv{
+ 		text-align: center;
+ 	}
+ }
+ @media (min-width:444px){
+ 	.logout-li{
+    margin-right: 26px;
+    margin-top: 8px;
+}
+ }
+ @media (max-width:400px){
+.logout-li {
+    margin-right: 15px;
+    margin-left: -38px;
+}
+}
+ @media (max-width:369px){
+.logout-li {
+     margin-right: 15px;
+    margin-left: -60px;
+}
+}
+ @media (max-width:348px){
+.logout-li {
+    margin-right: 15px;
+    margin-left: -78px;
+}
+}
+ @media (max-width:329px){
+.logout-li {
+    margin-right: 15px;
+    margin-left: -90px;
+}
+}
+

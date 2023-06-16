@@ -1,0 +1,204 @@
+.dropdown.multiselect.cityDropdown.open ul.dropdown-menu {
+      display: block;
+      height: 234px;
+      overflow-y: scroll;
+    }
+    ul{
+      list-style: none;
+    }
+  span.no_of_result {
+    float: right;
+  }
+    .parts ul {
+      -moz-column-count:3;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 20px;
+      column-count: 3;
+      column-gap: 20px;
+        padding: 0;
+    }
+    form#collegeForm label {
+      font-weight: 500;
+  }
+    form#collegeForm label.heading {
+    font-size: 16px;
+    color: #00408c;
+    font-weight: 700;
+  }
+ 
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #collegeForm .form-row {   
+    clear: both;
+  }
+  div#browsePop{
+    border: 1px solid rgb(239, 234, 234);    
+    box-shadow: 5px 5px 20px 4px #bdbbbb;
+    background: white;
+    z-index: 999;
+    position: absolute;
+    width: 650px;
+  }
+
+div#browsePop .header {
+    padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #3192a514;
+}
+
+div#browsePop span.tabtitles {
+    font-weight: bold;
+    color: #00408c;
+    font-size: 15px;
+}
+div#browsePop .searchtitling {
+  color: #00408c;  
+  font-weight: bold;
+}
+div#browsePop .innerbox {
+    padding: 15px 15px 0px 15px;
+}
+.innerbox.lightbox {
+    border-bottom: 1px solid #f3f3f3;
+}
+div#browsePop ol li {
+    padding: 5px 0px;
+}
+#searchMinProgram{
+  width: 40%;
+  font-size: 12px;
+  padding: 3px;
+}
+div#browsePop span.pipe {
+    padding: 0px 5px;
+    color: #337ab79e;
+}
+
+
+.MainBox.BrowseBox {
+    height: 210px;
+    overflow: scroll;
+}
+
+.MainBox.BrowseBox .loader {
+    width: 30px;
+    height: 30px;
+}
+span.Add {
+    background-image: url(images/add.gif);
+    background-repeat: no-repeat;
+    height: 12px;
+    margin-right: 2px;
+    vertical-align: middle;
+    float: left;
+    width: 29px;
+    cursor: pointer;
+}
+
+.Remove {
+    background-image: url(images/remove.gif);
+    background-repeat: no-repeat;
+    height: 12px;
+    margin-right: 2px;
+    vertical-align: middle;
+    float: left;
+    width: 42px;
+    cursor: pointer;
+}
+
+.HliteAdded {
+    color: #999999;
+}
+
+.innerbox.messageBox {
+    height: 185px;
+    overflow-y: scroll;
+}
+
+span.countProgram {
+    font-size: 14px;
+    color: #3292a5;
+    margin-top: -5px;
+    display: block;
+}
+.Plus {
+    background-image: url(images/open.gif);
+}
+.Minus {
+    background-image: url(images/close.gif);
+}
+.Plus, .Minus {
+    width: 15px;
+    height: 12px;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.form-group.labeldiv {
+    margin-bottom: 0px;
+}
+.sidebar{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+span.schoolInfo {
+    cursor: pointer;
+    color: #00408c;
+}
+span.schoolInfo:hover {
+    font-weight: 700;
+}
+.back{
+    padding: 5px 15px;
+    background: #3292a5;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.dashboard {
+    background: #03a9f40d;
+    padding: 20px;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img.google_maker {
+    width: 50px;   
+}
+
+.part-1-info:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #c7e5ef;
+    right: 0;
+    top: 0;
+}
+.map-section {
+    height: 160px;
+    padding: 45px 0px;
+}
+

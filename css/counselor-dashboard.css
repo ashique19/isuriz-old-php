@@ -1,0 +1,47 @@
+/*************************** HEADER ******************************/
+header.dashboard nav a.navbar-brand.logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+header.dashboard ul.navbar-nav.ml-auto {
+    padding: 0px 14px;
+    float: right;
+    padding-top: 10px;
+}
+header.dashboard ul.navbar-nav img.img-profile {
+    height: 4rem;
+    width: 4rem;
+	border-radius: 50%;
+}
+header.dashboard a:hover,header.dashboard .dropdown-menu a.dropdown-item:hover {
+    text-decoration: none;
+}
+ 
+header.dashboard .dropdown-menu a.dropdown-item {
+    display: block;
+    padding: 0px 9px 5px;
+}
+
+/*************************** ENd HEADER ******************************/
+.text-gray-600 {
+    color: #858796!important;
+}
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+
+
+
+/*************************** MEDIA QUERY ******************************/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+	header.dashboard nav a.navbar-brand.logo {
+		width: auto;
+	}
+}
